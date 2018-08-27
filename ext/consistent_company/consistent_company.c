@@ -305,11 +305,14 @@ int IsCompanyWord(char * inWord)
 		strcmp(inWord, "ADVERTISER") == 0 ||
 		strcmp(inWord, "ADV") == 0 ||
 		strcmp(inWord, "ADVERTISING") == 0 ||
+	        strcmp(inWord, "ADVISORS") == 0 ||
 		strcmp(inWord, "AGCY") == 0 ||
 		strcmp(inWord, "AGENCY") == 0 ||
+	        strcmp(inWord, "AG") == 0 ||
 		strcmp(inWord, "AGY") == 0 ||
 		strcmp(inWord, "ASC") == 0 ||
 		strcmp(inWord, "ASS") == 0 ||
+	        strcmp(inWord, "ASSET") == 0 ||
 		strcmp(inWord, "ASSN") == 0 ||
 		strcmp(inWord, "ASSOC") == 0 ||
 		strcmp(inWord, "ASSOCIAT") == 0 ||
@@ -320,6 +323,9 @@ int IsCompanyWord(char * inWord)
 		strcmp(inWord, "ATTY") == 0 ||
 		strcmp(inWord, "ATY") == 0 ||
 		strcmp(inWord, "AUTO") == 0 ||
+	        strcmp(inWord, "BETEILIGUNGSGESELLSCHAFT") == 0 ||
+	        strcmp(inWord, "CAPITAL") == 0 ||
+	        strcmp(inWord, "CIE") == 0 ||
 		strcmp(inWord, "CO") == 0 ||
 		strcmp(inWord, "COMP") == 0 ||
 		strcmp(inWord, "COMPANIES") == 0 ||
@@ -334,16 +340,25 @@ int IsCompanyWord(char * inWord)
 		strcmp(inWord, "DIRECT") == 0 ||
 		strcmp(inWord, "DIV") == 0 ||
 		strcmp(inWord, "DIVISION") == 0 ||
+	        strcmp(inWord, "EV") == 0 ||
+	        strcmp(inWord, "FUND") == 0 ||
+	        strcmp(inWord, "GBR") == 0 ||
+	        strcmp(inWord, "GESELLSCHAFT") == 0 ||
+	        strcmp(inWord, "GMBH") == 0 ||
 		strcmp(inWord, "GROUP") == 0 ||
 		strcmp(inWord, "HOLDINGS") == 0 ||
 		strcmp(inWord, "INC") == 0 ||
 		strcmp(inWord, "INCORPORATED") == 0 ||
 		strcmp(inWord, "INT") == 0 ||
+	        strcmp(inWord, "KG") == 0 ||
 		strcmp(inWord, "LIMITED") == 0 ||
 		strcmp(inWord, "LLC") == 0 ||
 		strcmp(inWord, "LLP") == 0 ||
 		strcmp(inWord, "LOCAL") == 0 ||
 		strcmp(inWord, "LTD") == 0 ||
+	        strcmp(inWord, "MBH") == 0 ||
+	        strcmp(inWord, "PARTNER") == 0 ||
+	        strcmp(inWord, "PARTNERS") == 0 ||
 		strcmp(inWord, "PC") == 0 ||
 		strcmp(inWord, "PLC") == 0 ||
 		strcmp(inWord, "PROD") == 0 ||
@@ -351,8 +366,14 @@ int IsCompanyWord(char * inWord)
 		strcmp(inWord, "PRODUCT") == 0 ||
 		strcmp(inWord, "PRODUCTIONS") == 0 ||
 		strcmp(inWord, "PRODUCTS") == 0 ||
+	        strcmp(inWord, "RECHTSANWÄLTE") == 0 ||
+	        strcmp(inWord, "SE") == 0 ||
 		strcmp(inWord, "TR") == 0 ||
-		strcmp(inWord, "TRADE") == 0)
+		strcmp(inWord, "TRADE") == 0 ||
+		strcmp(inWord, "UG") == 0 ||
+	        strcmp(inWord, "VENTURES") == 0 ||
+	        strcmp(inWord, "VENTURE") == 0 ||
+	        strcmp(inWord, "VERLAG") == 0)
 		return 1;
 	else
 		return 0;
