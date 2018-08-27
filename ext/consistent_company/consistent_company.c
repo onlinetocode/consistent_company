@@ -279,6 +279,17 @@ char * TransformCompany(char * resultString)
 					if (IsCompanyWord(lastWord))
 					{
 						*spaceLoc = '\0';
+						spaceLoc = strrchr(s, ' ');
+				                if (spaceLoc)  // Look at the new last word
+				                {
+					                 free(lastWord);
+					                 lastWord = malloc(strlen(spaceLoc)+1);
+					                 strcpy(lastWord, spaceLoc + 1);
+					                 if (IsCompanyWord(lastWord))
+					                 {
+						                  *spaceLoc = '\0';
+					                 }
+						}
 					}
 				}
 			}
