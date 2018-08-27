@@ -244,8 +244,6 @@ char * TransformCompany(char * resultString)
 	str_replace(s, " INTL ", " INT ");
 	str_replace(s, " MARKETING ", " MKT ");
 	str_replace(s, " MKTG ", " MKT ");
-	str_replace(s, " MANAGEMENT ", " MGT ");
-	str_replace(s, " MGMT ", " MGT ");
 
 	s = trimwhitespace(s);	
 	spaceLoc = strstr(s, " ");
@@ -356,6 +354,7 @@ int IsCompanyWord(char * inWord)
 		strcmp(inWord, "LLP") == 0 ||
 		strcmp(inWord, "LOCAL") == 0 ||
 		strcmp(inWord, "LTD") == 0 ||
+	        strcmp(inWord, "MANAGEMENT") == 0 ||
 	        strcmp(inWord, "MBH") == 0 ||
 	        strcmp(inWord, "PARTNER") == 0 ||
 	        strcmp(inWord, "PARTNERS") == 0 ||
